@@ -1,0 +1,32 @@
+Message: Referencia a objeto no establecida como instancia de un objeto.
+InnerException: 
+Stack Trace:    en StardewValley.GameLocation.resetLocalState() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Locations\GameLocation.cs:línea 3417
+   en StardewValley.Locations.DecoratableLocation.resetLocalState() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Locations\DecoratableLocation.cs:línea 310
+   en StardewValley.Locations.FarmHouse.resetLocalState() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Locations\FarmHouse.cs:línea 621
+   en StardewValley.GameLocation.<resetForPlayerEntry>b__183_0() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Locations\GameLocation.cs:línea 3408
+   en StardewValley.ModHooks.OnGameLocation_ResetForPlayerEntry(GameLocation location, Action action) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\ModHooks.cs:línea 12
+   en StardewValley.GameLocation.resetForPlayerEntry() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Locations\GameLocation.cs:línea 3404
+   en StardewValley.Network.Client.setUpGame() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Network\Client.cs:línea 185
+   en StardewValley.Network.Client.receiveServerIntroduction(BinaryReader msg) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Network\Client.cs:línea 213
+   en StardewValley.Network.Client.processIncomingMessage(IncomingMessage message) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Network\Client.cs:línea 94
+   en StardewValley.SDKs.GalaxyNetClient.onReceiveMessage(GalaxyID peer, Stream messageStream) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\SDKs\GalaxyNetClient.cs:línea 79
+   en StardewValley.SDKs.GalaxySocket.Receive(Action`1 onConnection, Action`2 onMessage, Action`1 onDisconnect, Action`1 onError) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\SDKs\GalaxySocket.cs:línea 475
+   en StardewValley.SDKs.GalaxyNetClient.receiveMessagesImpl() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\SDKs\GalaxyNetClient.cs:línea 56
+   en StardewValley.Network.Client.receiveMessages() en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Network\Client.cs:línea 68
+   en StardewValley.Menus.FarmhandMenu.update(GameTime time) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Menus\FarmhandMenu.cs:línea 160
+   en StardewValley.Menus.TitleMenu.update(GameTime time) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Menus\TitleMenu.cs:línea 1112
+   en StardewValley.Game1.updateActiveMenu(GameTime gameTime) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Game1.cs:línea 2715
+   en StardewValley.Game1.Update(GameTime gameTime) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Game1.cs:línea 2364
+   en Microsoft.Xna.Framework.Game.Tick()
+   en Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   en Microsoft.Xna.Framework.GameHost.OnIdle()
+   en Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   en Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   en System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   en System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   en System.Windows.Forms.Application.Run(Form mainForm)
+   en Microsoft.Xna.Framework.WindowsGameHost.Run()
+   en Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   en StardewValley.Program.Main(String[] args) en C:\Users\gitlab-runner\gitlab-runner\builds\5c0f9387\0\chucklefish\stardewvalley\Farmer\Farmer\Program.cs:línea 122
